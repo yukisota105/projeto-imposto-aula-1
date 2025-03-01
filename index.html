@@ -1,1 +1,36 @@
-oiiiii
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imposto</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+       <div class="row">
+            <div class="col-12">
+
+                <label for="">Produto: </label>
+                <input type="text" class="form-control" id="campoProd">
+
+                <label for="">Preço: </label>
+                <input type="number" class="form-control" id="campoPreco">
+
+                <button class="btn btn-primary mt-3" id="calc">Calcular</button>
+
+                <h1>Produto: <span id="produto"> </span></h1>
+                <h2>Preço: <span id="preco"> </span></h2>
+                <h2>Imposto adicionado: <span id="res"> </span></h2>
+                <h2>total: <span id="res2"> </span></h2>
+            
+
+            </div>
+       </div>
+    </div>
+
+    <script src="./js/pessoa.js"></script>
+    <script src="./js/main.js"></script>
+ 
+</body>
+</html>
