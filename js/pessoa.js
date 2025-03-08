@@ -14,11 +14,17 @@ var empresa;
         set preco(preco) {
             this._preco = preco;
         }
+        get imposto() {
+            return this._imposto;
+        }
+        set imposto(imposto) {
+            this._imposto = imposto;
+        }
         calcularImposto() {
-            return (30 * this._preco) / 100;
+            return (this._imposto * this._preco) / 100;
         }
         calcularImposto2() {
-            return (30 * this._preco) / 100 + this._preco;
+            return (this._imposto * this._preco) / 100 + this._preco;
         }
     }
     empresa.Pessoa = Pessoa;
